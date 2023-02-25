@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style type="text/css">
+    
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    
+    body{
+    background:#a0bacc;
+    ovrflow:hidden;
+    }
+    #nav{
+    background:#0d7377;
+    }
+    
+    .photo{
+    height:190px;
+    width:190px;
+    background:url("/storage/emulated/0/DCIM/Screenshots/Screenshot_20230115_161159.jpg");
+    background-size:190px;
+    border-radius:50%;
+    position:relative;
+    right:3px;
+    top:10px;
+    }
+    
+    .main{
+    margin-top:10px;
+    height:400px;
+    width:100%;
+    background:#002c3e;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    }
+    
+    .detail{
+    color:white;
+    text-transform:upperCase;
+    font-size:14px;
+    padding-left:6px;
+    padding-top:70px;
+    background:;
+    }
+    
+    .div1,.div2{
+    background:pink;
+    }
+    
+    h2{
+    margin-top:100px;
+    }
+    
+    .data{
+    margin-top:285px;
+    color:gold;
+    position:relative;
+    text-transform:upperCase;
+    overflow:hidden;
+    left:-20px;
+    width:210px;
+    
+    }
+    
+    .data::before{
+    content:'';
+    position:absolute;
+    height:100%;
+    width:105%;
+    background:#002c3e;
+    left:10;
+    border-left:3px solid red;
+    animation:typing 2s steps(9) infinite;
+    }
+    
+    @keyframes typing{
+    0%{
+    left:0%;
+    }
+    100%{
+    left:100%;
+    }
+    }
+    
+    .courses{
+    height:700px;
+    width:100%;
+    background:#002c3e;
+    position:relative;
+    margin-top:10px;
+    color:#fff;
+    padding:0px 0px 0px 20px;
+    z-index:1;
+    }
+    
+    .courseHeading{
+    padding:20px 0px 0px 30px;
+    }
+    
+    .html,.css,.js,.php,.sql,.cp,.oop{
+    height:20px;
+    color:#fff;
+    display:grid;
+    place-items:center;
+    border-bottom-left-radius:20px;
+    border-top-left-radius:20px;
+    border-bottom-right-radius:20px;
+    border-top-right-radius:20px;
+    }
+    .html{
+    width:80%;
+    }
+    .css,.js{
+    width:70%;
+    }
+    .php{
+    width:60%;
+    
+    background:#96577f;
+    }
+    .sql{
+    width:50%;
+    background:#08546c;
+    }
+    .cp,.oop{
+    width:40%;
+    }
+    .course{
+    margin:20px 0px 0px 0px;
+    }
+    .html{
+    background:#287096;
+    }
+    .css{
+    
+    background:#32aaaa;
+    }
+    .js{
+    background:#fabe44;
+    }
+    .oop{
+    background:#b80e65;
+    }
+    .cp{
+    background:#708a84;
+    }
+    
+    .html::before{
+    content:'';
+    position:absolute;
+    height:35px;
+    width:90%;
+    background:#a0bacc;
+    z-index:-1;
+    left:15px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow:inset 4px 4px 1px gray,
+    inset -3px -3px 1px gray;
+    }
+    .css::before{
+    content:'';
+    position:absolute;
+    height:35px;
+    width:90%;
+    background:#a0bacc;
+    z-index:-1;
+    left:15px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow:inset 4px 4px 1px gray,
+    inset -3px -3px 1px gray;
+    }
+    .js::before{
+    content:'';
+    position:absolute;
+    height:35px;
+    width:90%;
+    background:#a0bacc;
+    z-index:-1;
+    left:15px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow:inset 4px 4px 1px gray,
+    inset -3px -3px 1px gray;
+    }
+    .php::before{
+    content:'';
+    position:absolute;
+    height:35px;
+    width:90%;
+    background:#a0bacc;
+    z-index:-1;
+    left:15px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow:inset 4px 4px 1px gray,
+    inset -3px -3px 1px gray;
+    }
+    .sql::before{
+    content:'';
+    position:absolute;
+    height:35px;
+    width:90%;
+    background:#a0bacc;
+    z-index:-1;
+    left:15px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow:inset 4px 4px 1px gray,
+    inset -3px -3px 1px gray;
+    }
+    .cp::before{
+    content:'';
+    position:absolute;
+    height:35px;
+    width:90%;
+    background:#a0bacc;
+    z-index:-1;
+    left:15px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow:inset 4px 4px 1px gray,
+    inset -3px -3px 1px gray;
+    }
+    .oop::before{
+    content:'';
+    position:absolute;
+    height:35px;
+    width:90%;
+    background:#a0bacc;
+    z-index:-1;
+    left:15px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow:inset 4px 4px 1px gray,
+    inset -3px -3px 1px gray;
+    }
+    .service{
+    height:530px;
+    width:100%;
+    background:#002c3e;
+    margin-top:10px;
+    overflow:hidden;
+    position:relative;
+    }
+    
+    .serviceHeading{
+    margin:20px 0px 20px 50px;
+    color:#fff;
+    }
+    #pieChart{
+    float:right;
+    height:170px;
+    width:170px;
+    margin:60px 10px 0px 0px;
+    border-radius:50%;
+    background:conic-gradient(
+    #287096 0,
+    #287096 22%,
+    #32aaaa 0,
+    #32aaaa 44%,
+    #fabe44 0,
+    #fabe44 66%,
+    #96577f 0,
+    #96577f 85%,
+    #a0bacc 0,
+    #a0bacc 100%
+    );
+    }
+    .note{
+    color:green;
+    position:absolute;
+    left:20px;
+    text-transform:upperCase;
+    font-size:14px;
+    }
+    .pieChart{
+    animation:rotate 10s linear infinite;
+    }
+    @keyframes rotate{
+    100%{
+    transform:rotate(360deg);
+    }
+    }
+    .job{
+    height:90%;
+    width:50%;
+    background:;
+    margin:10px 0px 0px 0px;
+    }
+    .job ul{
+    list-style:none;
+    color:#fff;
+    }
+    .job ul li{
+    height:20px;
+    width:20px;
+    background:red;
+    margin:5px 0px 5px 0px;
+    }
+    .job ul li:nth-child(1){
+    background:#287096;
+    }
+    .job ul li:nth-child(2){
+    background:#32aaaa;
+    }
+    .job ul li:nth-child(3){
+    background:#fabe44;
+    }
+    .job ul li:nth-child(4){
+    background:#96577f;
+    }
+    .job ul li:nth-child(5){
+    background:#a0bacc;
+    }
+    footer{
+    height:190px;
+    width:100%;
+    background:#002c3e;
+    margin-top:10px;
+    color:#fff;
+    position:relative;
+    }
+    .fb,.twitter1,.yout,.insta{
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    }
+    .fb{
+    background:url("fb.jpg");
+    background-size:cover;
+    }
+    .twitter1{
+    background:url("twitter1.jpg");
+    background-size:cover;
+    }
+    .yout{
+    background:url("yout.jpg");
+    background-size:cover;
+    background-position:center;
+    }
+    .insta{
+    background:url("/storage/emulated/0/Pictures/facebook/1674363056274.jpg");
+    background-size:cover;
+    }
+    .social{
+    height:50%;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    }
+    footer h5{
+    padding:20px 0px 10px 100px;
+    }
+    .email{
+    padding-left:20px;
+    }
+    hr{
+    color:#fff;
+    }
+    .link{
+    height:100%;
+    width:100%;
+    border:none;
+    }
+    .job h5{
+    position:absolute;
+    padding:20px 0px 0px 20px;
+    color:green;
+    text-transform:upperCase;
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg"id="nav">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">Anil Hasda</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+    <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="gallery.html">gallery</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="service.html">services</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="courses.html">courses</a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+    <div class="main">
+    <div class="detail"><font>
+    "A dream doesn't become reality through magic,it takes sweat,determination and hardwork"</font>
+    <h2>Hello I am</h2>
+    </div>
+    <div class="photo">
+    <h1 class="data">ANIL HASDA</h1>
+    </div>
+    </div>
+    
+    <div class="courses"><u><h3 class="courseHeading">COURSE COMPLETED</u></h3>
+    
+    <div class="course">
+    <u>HTML:</u><br><br><div class="html">80% completed</div>
+
+    </div>
+    
+    <div class="course">
+    <u>CSS:</u><br><br><div class="css">70% completed</div>
+    </div>
+    
+    <div class="course">
+    <u>JAVASCRIPT:<br><br></u><div class="js">70% completed</div>
+    </div>
+    
+    <div class="course">
+    <u>PHP:</u><br><br><div class="php">60% completed</div>
+    </div>
+    
+    <div class="course">
+    <u>SQL:</u><br><br><div class="sql">50% completed</div>
+    </div>
+    <div class="course">
+    <u>C_PROGRAMMING:<br><br></u><div class="cp">20% completed</div>
+    </div>
+    
+    <div class="course">
+    <u>C++(OOP):<br><br></u><div class="oop">20% completed</div>
+    </div>
+    
+    </div>
+    
+    <div class="service">
+    <hr>
+    <h3 class="serviceHeading">SERVICE PROVIDED BY US</h3><hr>
+   
+   <div class="pieChart"id="pieChart"onclick="operation()"></div>
+   
+   <div class="job">
+   <ul>
+   1.WEB DEVELOPMENT(25%)<li></li>
+   2.GRAPHICS DESIGNING(25%)<li></li>
+   3.PROGRAMMING CLASS(25%)<li></li>
+   4.SEO(15%)<li></li>
+   5.PROGRAMMING CONSULTANCY(10%)<li></li>
+   </ul>
+   <font class="note">note:click on the piechart to stop or start</font>
+   </div>
+   
+    </div>
+    
+    <footer>
+    <h5><u>CONNECT WITH US BY:</u></h5>
+    <div class="social">
+    <div class="fb"><a href="https://www.facebook.com/nepali.ktomah.121?mibextid=ZbWKwL"><div class="link"></div></a></div>
+    <div class="twitter1"><a href="https://www.twitter.com"><div class="link"></div></a></div>
+    <div class="insta"><a href="https://instagram.com/hasda1435?igshid=ZDdkNTZiNTM="><div class="link"></div></a></div>
+    <div class="yout"><a href="https://www.youtube.com/@webdev2510"><div class="link"></div></a></div>
+    </div>
+    <font class="email"><u>for more:</u>hasdaanil098@gmail.com</font>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+    let x=0;
+    function stop(){
+    let a=document.querySelector(".pieChart");
+    a.classList.remove('pieChart');
+    }
+    function start(){
+    let a=document.getElementById("pieChart");
+    a.classList.add("pieChart");
+    }
+   function operation(){
+   x++;
+   if(x%2==1){
+   stop();
+   }
+   else{
+   start();
+   }
+   }
+   
+  //
+  let xx=0;
+  function a(){
+  let b=document.querySelector(".data");
+  if(xx==1){
+  b.innerHTML="A DEVELOPER";
+  }
+  if(xx==2){
+  b.innerHTML="A DESIGNER";
+  }
+  if(xx==0){
+  b.innerHTML="ANIL HASDA";
+  }
+  }
+  function change(){
+  xx++;
+  a();
+  if(xx==3){
+  xx=0;
+  a();
+  }
+  }
+  setInterval(change,2000);
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<html>
+<head>
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+.head{
+height:50px;
+width:100%;
+background:#08546c;
+}
+.home{
+background:gold;
+height:100%;
+width:100px;
+display:grid;
+place-items:center;
+
+}
+.home a{
+text-decoration:none;
+}
+.courses{
+background:#002c3e;
+color:gray;
+display:grid;
+place-items:center;
+line-height:40px;
+height:280px;
+}
+.frm{
+background:#002c3e;
+margin-top:10px;
+height:650px;
+padding-top:20px;
+color:gray;
+}
+.frm font{
+padding-left:5px;
+}
+.fnt{
+margin-left:30px;
+}
+form{
+padding:20px 0px 0px 10px;
+}
+fieldset{
+padding:20px 0px 20px 20px;
+}
+.submit{
+height:40px;
+width:100px;
+display:grid;
+place-items:center;
+border-radius:10px;
+border:none;
+}
+.fee{
+height:50px;
+width:100%;
+display:grid;
+place-items:center;
+background:#002c3e;
+color:cyan;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+<div class="head"><div class="home"><a href="portfolio.html">HOME</a></div></div>
+<div class="courses">
+<h3><u>COURSES OFFERED BY US</u></h3>
+<b>1.HTML(Basic+Advanced)<br>
+2.CSS(Basic+Advanced)<br>
+3.JS(Basic+Advanced)<br>
+4.SQL(Basic+Advanced)<br>
+5.PHP(Basic+Advanced)</b>
+</div>
+<div class="frm">
+<font>If you wanna take any course mentioned above </font><br><font class="fnt">then please fill the form.Thank you!</font>
+<form><fieldset><legend>Form</legend>
+Fname:<br><input type="text"required><br><br>
+Lname:<br><input type="text"required><br><br>
+Contact:<br><input type="telephone"required><br><br>
+Address:<br><input type="text"required><br><br>
+Gender:<br>male<input type="radio"name="radio"value="male"> female<input type="radio"name="radio"value="female">other<input type="radio"name="radio"value="other"><br><br>
+Courses:<br><select>
+<option>HTML</option>
+<option>CSS</option>
+<option>JS</option>
+<option>SQL</option>
+<option>PHP</option>
+</select><br><br>
+Course Type:<br>
+<select required>
+<option>Basic</option>
+<option>Advanced</option>
+</select><br><br>
+Duration:<br><input type="text"placeholder="6 months"disabled><br><br>
+<input type="submit"value="submit"class="submit">
+</fieldset>
+</form>
+</div>
+<div class="fee"><marquee>note:once you filled form successfully,fee information will be provided in your messageBox</marquee></div>
+</body>
+</html>

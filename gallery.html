@@ -1,0 +1,105 @@
+<html>
+<head>
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+.heading{
+height:60px;
+width:100%;
+background:#1791b1;
+color:green;
+position:fixed;
+z-index:3;
+top:0;
+}
+.heading h1{
+position:relative;
+left:140px;
+top:-35px;
+}
+.container{
+display:grid;
+border:1px solid red;
+grid-gap:10px;
+width:100px;
+background:gray;
+height:auto;
+grid-template-column:repeat(autofit,minmax(100px,1fr));
+z-index:2;
+}
+img{
+width:100%;
+cursor:pointer;
+}
+.display{
+height:100%;
+width:73%;
+background:gray;
+position:fixed;
+right:0;
+z-index:1;
+padding-top:70px;
+}
+.main{
+margin-top:60px;
+height:auto;
+width:100%;
+display:flex;
+}
+.home{
+margin:5px 0px 0px 5px;
+height:40px;
+width:100px;
+background:#002c3e;
+display:grid;
+place-items:center;
+}
+.home a{
+text-decoration:none;
+color:#fff;
+}
+</style>
+</head>
+<body>
+<div class="heading">
+<div class="home"><a href="portfolio.html">HOME</a></div>
+<h1>Gallery</h1>
+</div>
+<div class="main">
+<div class="container">
+<img src="img1.jpg"onclick="b('img1.jpg')"></img>
+<img src="img2.jpg"onclick="b('img2.jpg')"></img>
+<img src="img3.jpg"onclick="b('img3.jpg')"></img>
+<img src="img4.jpg"onclick="b('img4.jpg')"></img>
+<img src="img5.jpg"onclick="b('img5.jpg')"></img>
+<img src="img6.jpg"onclick="b('img6.jpg')"></img>
+<img src="img7.jpg"onclick="b('img7.jpg')"></img>
+<img src="img8.jpg"onclick="b('img8.jpg')"></img>
+<img src="img9.jpg"onclick="b('img9.jpg')"></img>
+<img src="img10.jpg"onclick="b('img10.jpg')"></img>
+<img src="img11.jpg"onclick="b('img11.jpg')"></img>
+<img src="img12.jpg"onclick="b('img12.jpg')"></img>
+<img src="img13.jpg"onclick="b('img13.jpg')"></img>
+<img src="img14.jpg"onclick="b('img14.jpg')"></img>
+<img src="img15.jpg"onclick="b('img15.jpg')"></img>
+<img src="img16.jpg"onclick="b('img16.jpg')"></img>
+<img src="img17.jpg"onclick="b('img17.jpg')"></img>
+<img src="img18.jpg"onclick="b('img18.jpg')"></img>
+<img src="img19.jpg"onclick="b('img19.jpg')"></img>
+<img src="img20.jpg"onclick="b('img20.jpg')"></img>
+<img src="img21.jpg"onclick="b('img21.jpg')"></img>
+<img src="img22.jpg"onclick="b('img22.jpg')"></img>
+</div>
+<div class="display"><img src="img1.jpg"class="pic"></img></div>
+</div>
+<script type="text/javascript">
+function b(a){
+document.querySelector('.pic').src=a;
+}
+</script>
+</body>
+</html>
